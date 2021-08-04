@@ -5,7 +5,6 @@ from odoo import http
 from odoo.http import request
 
 
-# -- yoksa hhtp.request yazacaktık
 class Homepage(http.Controller):
     @http.route('/hastane', auth='public', website=True)
     def main_page(self):
@@ -89,4 +88,3 @@ class Doctor(http.Controller):
         }
         request.env['doctor.doctor'].sudo().create(data)
         return request.redirect('/created')
-        # Kaydetti, kayitlarda guzel gozukuyor ama hospital_dcotor_rel'deki column yerleri degismeli sanki
