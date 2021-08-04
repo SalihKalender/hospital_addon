@@ -1,0 +1,409 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hastane
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-29 13:58+0000\n"
+"PO-Revision-Date: 2021-07-29 17:30+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: tr\n"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_needaction
+msgid "Action Needed"
+msgstr "Ihtiyaç duyulan eylem"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_ids
+msgid "Activities"
+msgstr "Aktiviteler"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Aktivite İstisna Dekorasyonu"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_state
+msgid "Activity State"
+msgstr "Aktivite Durumu"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Aktivite Türü Simgesi"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.doctor_form
+#: model_terms:ir.ui.view,arch_db:hastane.hospital_form
+#: model_terms:ir.ui.view,arch_db:hastane.patient_form
+msgid "Adı"
+msgstr "İsim"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.doctor_form
+msgid "Age"
+msgstr "Yaş"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_attachment_count
+msgid "Attachment Count"
+msgstr "Ek Hesap"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.hospital_form
+msgid "Açıklama"
+msgstr "Açıklama"
+
+#. module: hastane
+#: model_terms:ir.actions.act_window,help:hastane.doctors_action
+#: model_terms:ir.actions.act_window,help:hastane.hospital_action
+#: model_terms:ir.actions.act_window,help:hastane.patients_action
+msgid "Create a new product"
+msgstr "Yeni Ürün Oluştur"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__create_uid
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__create_uid
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__create_uid
+msgid "Created by"
+msgstr "… Tarafından Yapıldı"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__create_date
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__create_date
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__create_date
+msgid "Created on"
+msgstr "... Üzerinde  Yapıldı"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.doctor_form
+msgid "Derece"
+msgstr "Derece"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__display_name
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__display_name
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__display_name
+msgid "Display Name"
+msgstr "Görünen Ad"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__doctor_ids
+msgid "Doctor"
+msgstr "Doktor"
+
+#. module: hastane
+#: model:ir.actions.act_window,name:hastane.doctors_action
+#: model:ir.ui.menu,name:hastane.hastane_doctors_root
+msgid "Doctors"
+msgstr "Doktorlar"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.patient_form
+msgid "Doktor"
+msgstr "Doktor"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_follower_ids
+msgid "Followers"
+msgstr "Takipçiler"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Takipçiler(Kanallar)"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Takipçiler(Ortaklar)"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font Awesome Icons ör. fa-tasks"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.patient_form
+msgid "Hastane Adi"
+msgstr "Hospital Name"
+
+#. module: hastane
+#: model:ir.model,name:hastane.model_doctor_doctor
+msgid "Hastanedeki doktorlar"
+msgstr "Doctors in Hospital"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.doctor_form
+msgid "Hastaneler"
+msgstr " Hospitals"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__hospital_ids
+#: model:ir.ui.menu,name:hastane.hastane_root
+msgid "Hospital"
+msgstr "Hospital"
+
+#. module: hastane
+#: model:ir.actions.act_window,name:hastane.hospital_action
+#: model:ir.ui.menu,name:hastane.hastaneler_root
+msgid "Hospitals"
+msgstr "Hospitals"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__id
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__id
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__id
+msgid "ID"
+msgstr "İD"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_exception_icon
+msgid "Icon"
+msgstr "İkon"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Özel Aktivite  Türü Simgesi"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_needaction
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "İşaretlenirse, Yeni Mesajların Bildirimi Gelir"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_has_error
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "İşaretlenirse, Bazı Mesajlarda Teslim Hatası Vardır"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_is_follower
+msgid "Is Follower"
+msgstr "Takipçimi"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.hospital_form
+msgid "Kurulus Tarihi"
+msgstr "Released Date"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__released_date
+msgid "Kurulus _yili"
+msgstr "Release Year"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor____last_update
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital____last_update
+#: model:ir.model.fields,field_description:hastane.field_patient_patient____last_update
+msgid "Last Modified on"
+msgstr "Üzerindeki Son Ekleme"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__write_uid
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__write_uid
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__write_uid
+msgid "Last Updated by"
+msgstr "Son Ekleme Tarihi"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__write_date
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__write_date
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme Tarihi"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Ana Ek"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_has_error
+msgid "Message Delivery error"
+msgstr "Mesaj İleti Hatası"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_ids
+msgid "Messages"
+msgstr "Mesajlar"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__graduated_school
+msgid "Mezun Oldugu Okul"
+msgstr "Graduated School"
+
+#. module: hastane
+#: model_terms:ir.ui.view,arch_db:hastane.doctor_form
+msgid "Mezun olunan Okul"
+msgstr "Graduated School"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Son Aktivite Tarihi"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Sıradaki Aktivite Tarihi"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_summary
+msgid "Next Activity Summary"
+msgstr "Sıradaki Aktivite Özeti"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_type_id
+msgid "Next Activity Type"
+msgstr "Sıradaki Aktivite Tipi"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aksiyon Sayıları"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_has_error_counter
+msgid "Number of errors"
+msgstr "Hata Sayıları"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Eylem Gerektiren Mesaj Sayısı"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "İleti Hatası olan Mesaj Sayısı"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Okunmayan Mesaj Sayısı"
+
+#. module: hastane
+#: model:ir.actions.act_window,name:hastane.patients_action
+#: model:ir.model,name:hastane.model_patient_patient
+#: model:ir.ui.menu,name:hastane.hastane_hastalar_root
+msgid "Patients"
+msgstr "Hatalar"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__activity_user_id
+msgid "Responsible User"
+msgstr "Güvenli Kullanıcı"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS İleti Hatası"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__sequence
+msgid "Sequence"
+msgstr "Sıra"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Faaliyetlere Dayalı  Aktiviteler\n"
+"Geciken: Son Tarih Zaten Gecti\n"
+"Bugün: Aktivite Tarihi Bugün\n"
+"Planlanan: Gelecek Aktiviteler"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__type_of_degree
+msgid "Type of Degree"
+msgstr "Derece Tipi"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Kayıttaki Özel Durum Etkinliğinin Türü"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_unread
+msgid "Unread Messages"
+msgstr "Okunmayan Mesajlar"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Okunmayan Mesaj Sayısı"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__website_message_ids
+msgid "Website Messages"
+msgstr "Website Mesajları"
+
+#. module: hastane
+#: model:ir.model.fields,help:hastane.field_patient_patient__website_message_ids
+msgid "Website communication history"
+msgstr "Website Topluluğu Geçmişi"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__age
+msgid "Yas"
+msgstr "Yaş"
+
+#. module: hastane
+#: model_terms:ir.actions.act_window,help:hastane.doctors_action
+#: model_terms:ir.actions.act_window,help:hastane.hospital_action
+#: model_terms:ir.actions.act_window,help:hastane.patients_action
+msgid ""
+"You must define a product for everything you sell or purchase,\n"
+"                    whether it's a storable product, a consumable or a "
+"service."
+msgstr ""
+"Satın Aldığınız veya Satın Alacağınız Her Şeyi Tanımlamasınız\n"
+"Depolanabilir Bir Ürün, Sarf Malzemesi veya Hizmet Olsun"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__description
+msgid "aciklama"
+msgstr "Açıklama"
+
+#. module: hastane
+#: model:ir.model,name:hastane.model_hospital_hospital
+msgid "hospital.hospital"
+msgstr "Hastane.Hastane"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_hospital_hospital__name
+msgid "hospital_adi"
+msgstr "Hastane Adı"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_doctor_doctor__name
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__name
+msgid "name"
+msgstr "İsim"
+
+#. module: hastane
+#: model:ir.model.fields,field_description:hastane.field_patient_patient__hospital_id
+msgid "İlgili hastane"
+msgstr "İlgili Hastane"

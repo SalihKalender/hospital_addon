@@ -1,0 +1,104 @@
+<odoo>
+    <data>
+        <!--        form-->
+        <template id="doctor_kayit">
+            <t t-call="website.layout">
+                <div class="container p-5">
+                    <form action='/created/doctor'>
+                        <input type='hidden' name='csrf_token' t-att-value='request.csrf_token()'/>
+                        <div class="form-group">
+                            <label for='name' class='control-label'>Name</label>
+                            <input type="name" class="form-control" name='name' id='name'
+                                   placeholder='Doctor Name'/>
+                        </div>
+                        <div class="form-group">
+                            <label for='hospital_ids' class='control-label'>Hospital</label>
+                            <select id="hospital_id" name="hospital_id" class="form-control">
+                                <t t-foreach="hospitals" t-as="hsp">
+                                    <option t-att-value="hsp.id">
+                                        <t t-esc="hsp.name"/>
+                                    </option>
+                                </t>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for='name' class='control-label'>Age</label>
+                            <input type="name" class="form-control" name='age' id='age'
+                                   placeholder='Age'/>
+                        </div>
+                        <div class="form-group">
+                            <label for='type_of_degrees' class='control-label'>Type of Degree</label>
+                            <select id="type_of_degree" name="type_of_degree" class="form-control">
+                                <t t-foreach="type_of_degrees" t-as="degree">
+                                    <option t-att-value="degree.id">
+                                        <t t-esc="degree.name"/>
+                                    </option>
+                                </t>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for='name' class='control-label'>Graduated School</label>
+                            <input type="name" class="form-control" name='graduated_school' id='graduated_school'
+                                   placeholder="Graduated School"/>
+                        </div>
+                        <button type='submit' class='btn btn-primary'>Submit</button>
+                    </form>
+                </div>
+            </t>
+        </template>
+        <!--            get_doctors-->
+        <template id="get_doctors">
+            <t t-call="website.layout">
+                <div class="container p-5">
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Hospitals</th>
+                                <th scope="col">Mezun Okul</th>
+                                <th scope="col">Mezuniyet Derecesi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="doctors" t-as="doctor">
+                                <tr>
+                                    <th>
+                                        <t t-esc="doctor.name"/>
+                                    </th>
+                                    <td>
+                                        <t t-esc="doctor.age"/>
+                                    </td>
+                                    <td>
+                                        <t t-foreach="doctor.hospital_ids" t-as="hospital">
+                                            <t t-esc="hospital.name"/>
+                                            <t t-esc="' '"/>
+
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doctor.graduated_school"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doctor.type_of_degree.name"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

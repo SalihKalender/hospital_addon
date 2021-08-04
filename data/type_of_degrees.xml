@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <record id="type_of_degrees_lisans" model="type.of.degrees">
+            <field name="name">Lisans</field>
+        </record>
+        <record id="type_of_degrees_on_lisans" model="type.of.degrees">
+            <field name="name">On Lisans</field>
+        </record>
+        <record id="type_of_degrees_doktora" model="type.of.degrees">
+            <field name="name">Doctora</field>
+        </record>
+    </data>
+</odoo>

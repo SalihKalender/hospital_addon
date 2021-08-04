@@ -1,0 +1,65 @@
+<odoo>
+    <data>
+
+        <template id="hasta_kayit">
+            <t t-call="website.layout">
+                <div class="container">
+                    <form action='/created'>
+                        <input type='hidden' name='csrf_token' t-att-value='request.csrf_token()' />
+                        <div class="form-group">
+                            <label for='name' class='control-label'>Name</label>
+                            <input type="name" class="form-control" name='name' t-att-value='deneme' id='name'
+                                placeholder='Patient Name' />
+                        </div>
+                        <div class="form-group">
+                            <label for='doctor_ids' class='control-label'>Doctor</label>
+                            <select id="doctor_id" name="doctor_id" class="form-control">
+                                <t t-foreach="doctors" t-as="doctor">
+                                <option t-att-value="doctor.id">
+                                    <t t-esc="doctor.name" />
+                                </option>
+                                </t>
+                            </select>
+                        </div>
+                        <button type='submit' class='btn btn-primary'>Submit</button>
+                    </form>
+                </div>
+            </t>
+        </template>
+
+        <template id="get_patients">
+            <t t-call="website.layout">
+                <div class="container p-5">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Hospitals</th>
+                                <th scope="col">Doctors</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="patients" t-as="patient">
+                                <tr>
+                                    <th>
+                                        <t t-esc="patient.name"/>
+                                    </th>
+                                    <td>
+                                        <t t-esc="patient.hospital_id.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-foreach="patient.doctor_ids" t-as="doctor">
+                                            <t t-esc="doctor.name"/>
+                                            <t t-esc="' '"/>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>

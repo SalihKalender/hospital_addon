@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+
+        <template id="thanks">
+            <t t-call="website.layout">
+                <div class="container p-5">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Well done!</h4>
+                        <h2>Urununuz Basarili bir Sekilde Kaydedildi</h2>
+                        <hr />
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and
+                            tidy.</p>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>

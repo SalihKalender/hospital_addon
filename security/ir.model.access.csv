@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hastane_hastane,hastane.hastane,model_hospital_hospital,base.group_user,1,1,1,1
+access_hastane_doctor,hastane.doctor,model_doctor_doctor,base.group_user,1,1,1,1
+access_hastane_patient,hastane.patien,model_patient_patient,base.group_user,1,1,1,1

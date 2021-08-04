@@ -1,0 +1,126 @@
+<odoo>
+
+
+    <!-- view mode'daki sıralama sag üstteki icon'larla gosterilen siralama -->
+    <!-- class='o_view_nocontent_smiling_face' ==> eger ekranda hic db'ye kayıtı icerik yoksa otomatik bu calısıyor -->
+    <!-- name='res-model' olan element'in icine db_name'ni yazacan -->
+    <!-- Bizim menumuz suanda tek record'la solda gozuyor -->
+
+    <record id="hospital_tree" model="ir.ui.view">
+        <field name="name">hospital.hospital.tree</field>
+        <field name="model">hospital.hospital</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name='name'/>
+                <field name='description'/>
+                <field name='released_date'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hospital_form" model="ir.ui.view">
+        <field name="name">hospital.hospital.form</field>
+        <field name="model">hospital.hospital</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name='name' string="Adı"/>
+                            <field name='description' string="Açıklama"/>
+                        </group>
+                        <group>
+                            <field name='released_date' string='Kurulus Tarihi'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- view'ların hepsinin model='ir.ui.view'dır -->
+    <!-- form'da name='res_model' degil name='model' yapıyorsun -->
+    <!-- name='name' olan form'da iceriye db_name.form yazmalısın -->
+    <!-- Her record eklendiginde view sayısı artar, o view'ı bulmak icin aramaya o record'un id'sini yaz -->
+    <!-- Sheet tag arkaya beyaz havlu atıyor -->
+    <!-- group icinde 2 group yapınca 2'ye boluyor ortalıgı -->
+
+
+    <record id="hospital_action" model="ir.actions.act_window">
+        <field name="name">Hospitals</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.hospital</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new product
+            </p>
+            <p>
+                You must define a product for everything you sell or purchase,
+                whether it's a storable product, a consumable or a service.
+            </p>
+        </field>
+    </record>
+
+    <!-- id='moduleName_root' -->
+    <!-- name="DOM'da gozukecek olan name" -->
+    <menuitem id='hastane_root'
+              name='Hospital'
+              sequence='10'/>
+
+    <!-- parent='parent_id' ==> parent verdigimiz icin yukarıdaki menunun submenu'su oldu -->
+    <!-- Bu menuitem'ın action'u olmadan hicbisi gozukmez -->
+    <!-- Normalde asıl menu'nun name'sine(soldaki menu) tıklayınca buda yukarıda mor renki olarak gelir submenu'ler ama suan action'u yok  -->
+    <menuitem id='hastaneler_root'
+              name='Hospitals'
+              parent='hastane_root'
+              action='hospital_action'
+    />
+
+</odoo>
+
+
+        <!--** name attribute'leri field'i temsil ediyor -->
+
+
+        <!-- <field name='adi'>Salih</field>     Buraya string='Salih' yazmadıgımız icin varsayılan olarark Salih yazacak -->
+
+        <!-- <record id="view_account_reconcile_model_line_form" model="ir.ui.view">
+                    <field name="name">account.reconcile.model.line.form</field>
+                    <field name="model">account.reconcile.model.line</field>
+                    <field name="arch" type="xml">
+                        <form>
+                            <field name="model_id" invisible="1"/>
+                            <field name="match_total_amount" invisible="1"/>
+                            <field name="match_total_amount_param" invisible="1"/>
+                            <field name="rule_type" invisible="1"/>
+                            <group>
+                                <group>
+                                    <field name="account_id" options="{'no_create': True}" domain="[('company_id', '=', company_id)]"
+                                           attrs="{'required': ['|', ('rule_type', '!=', 'invoice_matching'), '&amp;', '&amp;', ('rule_type', '=', 'invoice_matching'), ('match_total_amount', '=', True), ('match_total_amount_param', '!=', 100.0)]}"/>
+                                    <field name="amount_type"/>
+                                    <field name="tax_ids"
+                                           domain="[('company_id', '=', company_id)]"
+                                           options="{'no_create': True}"
+                                           context="{'append_type_to_tax_name': True}"
+                                           widget="many2many_tags"/>
+                                    <field name="show_force_tax_included" invisible="1"/>
+                                    <field name="force_tax_included"
+                                           attrs="{'invisible': [('show_force_tax_included', '=', False)]}" force_save="1"/>
+                                    <field name="analytic_account_id" domain="['|', ('company_id', '=', company_id), ('company_id', '=', False)]" groups="analytic.group_analytic_accounting"/>
+                                    <field name="analytic_tag_ids" groups="analytic.group_analytic_tags" widget="many2many_tags"/>
+                                    <field name="company_id" invisible="1"/>
+                                </group>
+                                <group>
+                                    <field name="label"/>
+                                    <label for="amount_string"/>
+                                    <div>
+                                        <field name="amount_string" class="oe_inline"/>
+                                        <span class="o_form_label oe_inline" attrs="{'invisible':[('amount_type','!=','percentage')]}">%</span>
+                                    </div>
+                                </group>
+                            </group>
+                        </form>
+                    </field>
+                </record> -->
+
+

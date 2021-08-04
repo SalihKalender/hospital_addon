@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="menu_hospitals" model="website.menu">
+            <field name="name">Hospitals</field>
+            <field name="url">/hospitals</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">10</field>
+        </record>
+        <record id="menu_hospital_doctors" model="website.menu">
+            <field name="name">Doctors</field>
+            <field name="url">/doctors</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">11</field>
+        </record>
+        <record id="menu_hospital_patients" model="website.menu">
+            <field name="name">Patients</field>
+            <field name="url">/patients</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">12</field>
+        </record>
+    </data>
+</odoo>
